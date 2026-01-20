@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="catalog.html">Каталог туров</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Контакты</h1>
+        <p>Астана, ул. Абая 50</p>
+        <p>Тел: +7 (775) 626-73-06 | Email: adilalimgazin@tour.kz</p>
+
+        <form class="contact-form">
+            <label for="name">Имя</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Сообщение</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit" class="cta">Отправить</button>
+        </form>
+
+        <h2>FAQ</h2>
+        <details>
+            <summary>Как забронировать?</summary>
+            <p>Напишите или позвоните — подберём тур за 5 минут.</p>
+        </details>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Туристическое агентство. Астана, Казахстан.</p>
+    </footer>
+</body>
+</html>
