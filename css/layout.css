@@ -1,0 +1,303 @@
+/* layout.css */
+
+.hero {
+    background-image: url('https://images.pexels.com/photos/33326592/pexels-photo-33326592/free-photo-of-stunning-coastal-deck-overlooking-ocean.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+header:not(.hero) {
+    background-color: #007BFF;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 123, 255, 0.9); /* полупрозрачный синий */
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-menu li {
+    margin: 0 1.5rem;
+}
+
+.nav-menu a {
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+}
+
+main {
+    margin-top: 80px; /* высота nav + отступ */
+    padding: 1rem;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.overview-grid,
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.8rem 0;
+    }
+    
+    .nav-menu li {
+        margin: 0.5rem 1rem;
+    }
+    
+    .hero {
+        min-height: 60vh;
+    }
+    
+    main {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    .nav-menu li {
+        margin: 0.8rem 0;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}/* layout.css */
+
+.hero {
+    background-image: url('https://images.pexels.com/photos/33326592/pexels-photo-33326592/free-photo-of-stunning-coastal-deck-overlooking-ocean.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+header:not(.hero) {
+    background-color: #007BFF;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 123, 255, 0.9); /* полупрозрачный синий */
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-menu li {
+    margin: 0 1.5rem;
+}
+
+.nav-menu a {
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+}
+
+main {
+    margin-top: 80px; /* высота nav + отступ */
+    padding: 1rem;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.overview-grid,
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.8rem 0;
+    }
+    
+    .nav-menu li {
+        margin: 0.5rem 1rem;
+    }
+    
+    .hero {
+        min-height: 60vh;
+    }
+    
+    main {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    .nav-menu li {
+        margin: 0.8rem 0;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
+.hero {
+    background-image: url('https://images.pexels.com/photos/33326592/pexels-photo-33326592/free-photo-of-stunning-coastal-deck-overlooking-ocean.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+.hero-content {
+    max-width: 800px;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 1rem 0;
+}
+.overview-grid, .tour-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.reviews, .popular-tours {
+    padding: 2rem;
+    text-align: center;
+}
+@media (max-width: 480px) {
+    .hero {
+        height: 60vh;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .overview-grid, .tour-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 769px) {
+    .hero {
+        height: 80vh;
+    }
+}
