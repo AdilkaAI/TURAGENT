@@ -20,3 +20,14 @@ footer {
     padding: 1.5rem;
     margin-top: 3rem;
 }
+
+body { font-family: 'Roboto', sans-serif; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, .brand-title {
+    font-family: 'Playfair Display', serif;
+}
